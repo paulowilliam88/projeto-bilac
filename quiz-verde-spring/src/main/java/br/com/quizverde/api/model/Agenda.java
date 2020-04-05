@@ -22,6 +22,9 @@ public class Agenda implements Serializable {
 
     @Column(name = "agn_nome_medico")
     private String nomeMedico;
+    
+    @Column(name = "agn_especialidade")
+    private String especialidade;
 
     public int getId() {
         return id;
