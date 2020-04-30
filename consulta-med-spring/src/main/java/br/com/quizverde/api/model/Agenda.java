@@ -20,7 +20,6 @@ public class Agenda implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     
-    
     @Enumerated(EnumType.STRING)
     @Column(name = "agn_agenda")
     private TipoAgendamentoEnum tipoAgendamentoEnum;

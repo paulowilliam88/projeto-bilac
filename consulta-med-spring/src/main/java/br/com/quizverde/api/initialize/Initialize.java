@@ -15,7 +15,6 @@ public class Initialize implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
         {
             Agenda agenda = new Agenda();
             agenda.setTipoAgendamentoEnum(TipoAgendamentoEnum.INTENCAO_AGENDA);
@@ -23,6 +22,7 @@ public class Initialize implements CommandLineRunner {
             agenda.setProfissional("GUILHERME JOSÉ DA CRUZ");
             agenda.setEspecialidade("MÉDICO CLINICO GERAL");
             banckRepository.save(agenda);
+
         }
 
     }
