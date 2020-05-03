@@ -7,7 +7,7 @@ const routes: Routes = [
   {
   path: '',
   data: {
-      title: 'Get Started'
+      title: 'Inicio'
   },
   children: [
     {
@@ -17,7 +17,7 @@ const routes: Routes = [
       path: 'accordion',
       loadChildren: './+accordion/accordion.module#AccordionModule',
       data: {
-        title: 'Accordion'
+        title: 'Agenda'
       }
     }, {
       path: 'alert',
