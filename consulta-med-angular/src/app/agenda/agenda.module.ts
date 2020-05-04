@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AccordionRoutingModule } from './accordion-routing.module';
-import { AccordionComponent } from './accordion.component';
+import { AgendaRoutingModule } from './agenda-routing.module';
+import { AgendaComponent } from './agenda.component';
 
 import { AccordionModule as MkAccordionModule, BoxModule } from 'angular-admin-lte';
 
@@ -10,10 +10,10 @@ import { AccordionModule as MkAccordionModule, BoxModule } from 'angular-admin-l
 @NgModule({
   imports: [
     CommonModule,
-    AccordionRoutingModule,
+    AgendaRoutingModule,
     MkAccordionModule,
     BoxModule
   ],
-  declarations: [AccordionComponent]
+  declarations: [AgendaComponent]
 })
-export class AccordionModule { }
+export class AgendaModule { }

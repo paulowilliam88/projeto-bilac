@@ -3,11 +3,10 @@ import {Component, AfterViewInit, NgZone, ChangeDetectorRef, ViewRef} from '@ang
 import * as Prism from 'prismjs';
 
 @Component({
-  selector: 'app-accordion',
-  templateUrl: './accordion.component.html',
-  styleUrls: ['./accordion.component.css']
+  templateUrl: './agenda.component.html',
+  styleUrls: ['./agenda.component.css']
 })
-export class AccordionComponent implements AfterViewInit {
+export class AgendaComponent implements AfterViewInit {
   public activeIndex: any = 0;
 
   /**
