@@ -18,13 +18,42 @@ public class Initialize implements CommandLineRunner {
         {
             Agenda agenda = new Agenda();
             agenda.setTipoAgendamentoEnum(TipoAgendamentoEnum.INTENCAO_AGENDA);
-            agenda.setPessoa("ALCI DE OLIVEIRA BARROS");
+            agenda.setPessoa("VICTOR DE ANDRADE BARBOSA ");
             agenda.setProfissional("GUILHERME JOSÉ DA CRUZ");
             agenda.setEspecialidade("MÉDICO CLINICO GERAL");
             banckRepository.save(agenda);
 
         }
 
+        {
+            Agenda agenda = new Agenda();
+            agenda.setTipoAgendamentoEnum(TipoAgendamentoEnum.INTENCAO_AGENDA);
+            agenda.setPessoa("SEBASTIÃO BATISTA BOSGES");
+            agenda.setProfissional("GUILHERME JOSÉ DA CRUZ");
+            agenda.setEspecialidade("MÉDICO CLINICO GERAL");
+            banckRepository.save(agenda);
+
+        }
+
+        {
+            Agenda agenda = new Agenda();
+            agenda.setTipoAgendamentoEnum(TipoAgendamentoEnum.INTENCAO_AGENDA);
+            agenda.setPessoa("ALEXANDRE CARDOSO CARVALHO");
+            agenda.setProfissional("GUILHERME JOSÉ DA CRUZ");
+            agenda.setEspecialidade("MÉDICO CLINICO GERAL");
+            banckRepository.save(agenda);
+
+        }
+
+        {
+            Agenda agenda = new Agenda();
+            agenda.setTipoAgendamentoEnum(TipoAgendamentoEnum.INTENCAO_AGENDA);
+            agenda.setPessoa("GUILERME CASTRO DIAS");
+            agenda.setProfissional("GUILHERME JOSÉ DA CRUZ");
+            agenda.setEspecialidade("MÉDICO CLINICO GERAL");
+            banckRepository.save(agenda);
+
+        }
     }
 
 }

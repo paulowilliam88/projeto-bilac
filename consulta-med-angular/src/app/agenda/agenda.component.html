@@ -1,0 +1,35 @@
+<div class="box">
+
+
+    <div class="box-body">
+        <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                        <thead>
+                            <tr role="row">
+                                <th style="text-align: center; width: 10%;">Código</th>
+                                <th style="text-align: center; width: 15%;">Especialidade</th>
+                                <th style="text-align: center; width: 30%;">Nome</th>
+                                <th style="text-align: center; width: 35%;">Profissional</th>
+                                <th style="text-align: center; width: 10%;">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr *ngFor="let agenda of agendList" role="row" class="{{agenda.id % 2 ? even :  odd}}">
+                                <td>{{agenda.id}}</td>
+                                <td>{{agenda.especialidade}}</td>
+                                <td>{{agenda.pessoa}}</td>
+                                <td>{{agenda.profissional}}</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
