@@ -1,8 +1,8 @@
-package br.com.quizverde.api.initialize;
+package br.com.consultamed.api.initialize;
 
-import br.com.quizverde.api.enumerator.TipoAgendamentoEnum;
-import br.com.quizverde.api.model.Agenda;
-import br.com.quizverde.api.repository.AgendaRepository;
+import br.com.consultamed.api.enumerator.TipoAgendamentoEnum;
+import br.com.consultamed.api.model.Agenda;
+import br.com.consultamed.api.repository.AgendaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package br.com.quizverde.api.enumerator;
+package br.com.consultamed.api.enumerator;
 
 public enum TipoAgendamentoEnum {
 

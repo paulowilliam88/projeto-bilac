@@ -1,6 +1,6 @@
-package br.com.quizverde.api.model;
+package br.com.consultamed.api.model;
 
-import br.com.quizverde.api.enumerator.TipoAgendamentoEnum;
+import br.com.consultamed.api.enumerator.TipoAgendamentoEnum;
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -18,7 +18,7 @@ public class Agenda implements Serializable {
     @Id
     @Column(name = "agn_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
     
     @Enumerated(EnumType.STRING)
     @Column(name = "agn_agenda")
@@ -33,11 +33,11 @@ public class Agenda implements Serializable {
     @Column(name = "agn_especialidade")
     private String especialidade;
     
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

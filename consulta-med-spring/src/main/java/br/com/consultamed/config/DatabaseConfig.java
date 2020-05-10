@@ -1,4 +1,4 @@
-package br.com.quizverde.config;
+package br.com.consultamed.config;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -24,7 +24,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableJpaRepositories(
         entityManagerFactoryRef = "mysqlEntityManagerFactory",
         transactionManagerRef = "mysqlTransactionManager",
-        basePackages = "br.com.quizverde.**")
+        basePackages = "br.com.consultamed.**")
 @PropertySource("classpath:application.properties")
 public class DatabaseConfig {
 
@@ -72,8 +72,8 @@ public class DatabaseConfig {
         properties.put(AvailableSettings.FORMAT_SQL, "true");
 
         LocalContainerEntityManagerFactoryBean build = builder.dataSource(dataSource)
-                .packages("br.com.quizverde")
-                .persistenceUnit("mysqlPU")
+                .packages("br.com.consultamed")
+                .persistenceUnit("mysql-pu")
                 .properties(properties)
                 .build();
         return build;
