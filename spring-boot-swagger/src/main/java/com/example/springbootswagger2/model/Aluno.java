@@ -2,7 +2,7 @@ package com.example.springbootswagger2.model;
 
 import io.swagger.annotations.ApiModelProperty;
 
-public class Student {
+public class Aluno {
 
     @ApiModelProperty(notes = "Nome do aluno", name = "name", required = true)
     private String name;
@@ -13,7 +13,7 @@ public class Student {
     @ApiModelProperty(notes = "Pais do aluno", name = "country", required = true)
     private String country;
 
-    public Student(String name, String cls, String country) {
+    public Aluno(String name, String cls, String country) {
         super();
         this.name = name;
         this.cls = cls;

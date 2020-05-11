@@ -1,4 +1,4 @@
-import {Component,  OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import * as Prism from 'prismjs';
 import { AgendaService } from './agenda.service';
@@ -7,7 +7,7 @@ import { AgendaService } from './agenda.service';
   templateUrl: './agenda.component.html',
   styleUrls: ['./agenda.component.css']
 })
-export class AgendaComponent implements OnInit  {
+export class AgendaComponent implements OnInit {
 
   public agendList: any;
 
@@ -16,7 +16,17 @@ export class AgendaComponent implements OnInit  {
   }
 
   ngOnInit() {
-    this.backEndService.listar().subscribe(dados => this.agendList = dados);
+    setTimeout(() => {
+      this.backEndService.listar().subscribe(dados => this.agendList = dados);
+    }, 900);
   }
 
+  onClickAgendar(agenda:any) {
+    this.backEndService.agendar(agenda).subscribe(dados => console.log(dados));
+  }
+
+
+  onClickCancelarAgendamento(agenda:any) {
+    this.backEndService.cancelarAgendamento(agenda).subscribe(dados => console.log(dados));
+  }
 }

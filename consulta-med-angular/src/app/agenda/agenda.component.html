@@ -23,7 +23,20 @@
                                 <td>{{agenda.especialidade}}</td>
                                 <td>{{agenda.pessoa}}</td>
                                 <td>{{agenda.profissional}}</td>
-                                <td></td>
+                                <td style="text-align: center;">
+
+                                    <a (click)="onClickAgendar(agenda)" style="margin-right: 5px;" class="btn btn btn-social-icon btn-vk">
+                                        <i class="glyphicon glyphicon-plus">
+
+                                        </i>
+                                    </a>
+
+                                    <a (click)="onClickCancelarAgendamento(agenda)" style="margin-left: 5px;" class="btn btn btn-social-icon btn-vk">
+                                        <i class="glyphicon glyphicon-remove-circle">
+
+                                        </i>
+                                    </a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
