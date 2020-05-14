@@ -18,9 +18,11 @@ public class Initialize implements CommandLineRunner {
         {
             Agenda agenda = new Agenda();
             agenda.setTipoAgendamentoEnum(TipoAgendamentoEnum.INTENCAO_AGENDA);
-            agenda.setPessoa("VICTOR DE ANDRADE BARBOSA ");
-            agenda.setProfissional("GUILHERME JOSÉ DA CRUZ");
+            agenda.setPessoa("GUILHERME JOSÉ DA CRUZ");
+            agenda.setProfissional("VICTOR DE ANDRADE BARBOSA ");
             agenda.setEspecialidade("MÉDICO CLINICO GERAL");
+            agenda.setTipoAgendamentoEnum(TipoAgendamentoEnum.AGENDADO);
+            agenda.setDataHora("22/01/2020 10:30");
             banckRepository.save(agenda);
 
         }
@@ -28,9 +30,11 @@ public class Initialize implements CommandLineRunner {
         {
             Agenda agenda = new Agenda();
             agenda.setTipoAgendamentoEnum(TipoAgendamentoEnum.INTENCAO_AGENDA);
-            agenda.setPessoa("SEBASTIÃO BATISTA BOSGES");
-            agenda.setProfissional("GUILHERME JOSÉ DA CRUZ");
+            agenda.setPessoa("GUILHERME JOSÉ DA CRUZ");
+            agenda.setProfissional("SEBASTIÃO BATISTA BOSGES");
             agenda.setEspecialidade("MÉDICO CLINICO GERAL");
+            agenda.setTipoAgendamentoEnum(TipoAgendamentoEnum.AGENDADO);
+            agenda.setDataHora("20/02/2020 10:30");
             banckRepository.save(agenda);
 
         }
@@ -38,9 +42,11 @@ public class Initialize implements CommandLineRunner {
         {
             Agenda agenda = new Agenda();
             agenda.setTipoAgendamentoEnum(TipoAgendamentoEnum.INTENCAO_AGENDA);
-            agenda.setPessoa("ALEXANDRE CARDOSO CARVALHO");
-            agenda.setProfissional("GUILHERME JOSÉ DA CRUZ");
+            agenda.setPessoa("GUILHERME JOSÉ DA CRUZ");
+            agenda.setProfissional("ALEXANDRE CARDOSO CARVALHO");
             agenda.setEspecialidade("MÉDICO CLINICO GERAL");
+            agenda.setTipoAgendamentoEnum(TipoAgendamentoEnum.AGENDADO);
+            agenda.setDataHora("20/02/2020 10:30");
             banckRepository.save(agenda);
 
         }
@@ -48,9 +54,11 @@ public class Initialize implements CommandLineRunner {
         {
             Agenda agenda = new Agenda();
             agenda.setTipoAgendamentoEnum(TipoAgendamentoEnum.INTENCAO_AGENDA);
-            agenda.setPessoa("GUILERME CASTRO DIAS");
-            agenda.setProfissional("GUILHERME JOSÉ DA CRUZ");
+            agenda.setPessoa("GUILHERME JOSÉ DA CRUZ");
+            agenda.setProfissional("GUILERME CASTRO DIAS");
             agenda.setEspecialidade("MÉDICO CLINICO GERAL");
+            agenda.setTipoAgendamentoEnum(TipoAgendamentoEnum.AGENDADO);
+            agenda.setDataHora("20/07/2020 10:30");
             banckRepository.save(agenda);
 
         }

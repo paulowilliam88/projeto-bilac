@@ -19,7 +19,7 @@ public class Agenda implements Serializable {
     @Column(name = "agn_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    
+
     @Enumerated(EnumType.STRING)
     @Column(name = "agn_agenda")
     private TipoAgendamentoEnum tipoAgendamentoEnum;
@@ -32,7 +32,10 @@ public class Agenda implements Serializable {
 
     @Column(name = "agn_especialidade")
     private String especialidade;
-    
+
+    @Column(name = "agn_data_hora")
+    private String dataHora;
+
     public Integer getId() {
         return id;
     }
@@ -48,8 +51,6 @@ public class Agenda implements Serializable {
     public void setTipoAgendamentoEnum(TipoAgendamentoEnum tipoAgendamentoEnum) {
         this.tipoAgendamentoEnum = tipoAgendamentoEnum;
     }
-    
-    
 
     public String getPessoa() {
         return pessoa;
@@ -73,5 +74,13 @@ public class Agenda implements Serializable {
 
     public void setEspecialidade(String especialidade) {
         this.especialidade = especialidade;
+    }
+
+    public String getDataHora() {
+        return dataHora;
+    }
+
+    public void setDataHora(String dataHora) {
+        this.dataHora = dataHora;
     }
 }
