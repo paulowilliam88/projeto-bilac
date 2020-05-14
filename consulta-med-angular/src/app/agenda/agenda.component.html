@@ -11,8 +11,10 @@
                             <tr role="row">
                                 <th style="text-align: center; width: 10%;">Código</th>
                                 <th style="text-align: center; width: 15%;">Especialidade</th>
-                                <th style="text-align: center; width: 30%;">Nome</th>
-                                <th style="text-align: center; width: 35%;">Profissional</th>
+                                <th style="text-align: center; width: 20%;">Nome</th>
+                                <th style="text-align: center; width: 15%;">Profissional</th>
+                                <th style="text-align: center; width: 15%;">Status</th>
+                                <th style="text-align: center; width: 10%;">Data Hora</th>
                                 <th style="text-align: center; width: 10%;">Ações</th>
                             </tr>
                         </thead>
@@ -23,6 +25,8 @@
                                 <td>{{agenda.especialidade}}</td>
                                 <td>{{agenda.pessoa}}</td>
                                 <td>{{agenda.profissional}}</td>
+                                <td>{{agenda.tipoAgendamentoEnum}}</td>
+                                <td>{{agenda.dataHora}}</td>
                                 <td style="text-align: center;">
 
                                     <a (click)="onClickAgendar(agenda)" style="margin-right: 5px;" class="btn btn btn-social-icon btn-vk">
