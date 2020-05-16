@@ -40,12 +40,6 @@ public class DatabaseConfig {
     @Value("${spring.datasource.password}")
     private String password;
 
-    @Value("${spring.jpa.hibernate.ddl-auto}")
-    private String ddlAuto;
-
-    @Value("${spring.hibernate.show_sql}")
-    private String showSql;
-
     @PostConstruct
     public void init() {
         System.out.println("br.com.quizverde.config.DatabaseConfig.init()");
