@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import br.com.consultamed.api.repository.AgendaRepository;
 import java.util.Optional;
+import org.springframework.data.domain.Sort;
 
 @Service
 public class AgendaService {
@@ -14,7 +15,7 @@ public class AgendaService {
     private AgendaRepository agendaRepository;
 
     public List<Agenda> findAll() {
-        return agendaRepository.findAll();
+        return agendaRepository.findAll(Sort.by(Sort.Direction.DESC, "id"));
     }
 
     public Agenda save(Agenda agenda) {
